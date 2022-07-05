@@ -1,0 +1,119 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 34.3rem;
+    width: 100%;
+    min-height: 3rem;
+    font-size: $fs-8;
+    border: none;
+    padding: 1.4rem;
+    border-radius: 1rem;
+
+    &:disabled {
+        color: $gray;
+        background-color: $field;
+        pointer-events: none;
+
+        .btn__number {
+            background-color: $black-medium;
+            color: $white;
+        }
+    }
+
+    &__small {
+        max-width: 20rem;
+        padding: 1.4rem;
+    }
+
+    &__mini {
+        max-width: 7.7rem;
+        height: 3rem;
+        padding: 0.5rem;
+        border-radius: 0.6rem;
+        font-size: $fs-3;
+    }
+
+    &__primary {
+        background-color: $blue;
+        position: relative;
+        color: $white;
+
+        .btn__icon-arrow {
+            position: absolute;
+            left: 1.4rem;
+        }
+
+        .btn__number {
+            background-color: $white;
+            color: $blue;
+        }
+    }
+
+    &__transparent {
+        background-color: transparent !important;
+        color: $blue;
+
+        .btn__icon-arrow {
+            margin-right: 0.65rem;
+        }
+
+        .btn__number {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    &_load {
+        pointer-events: none;
+    }
+
+    &__icon-load {
+        animation: loader 2s ease-out infinite;
+    }
+
+    &__default {
+        background-color: $primary;
+        color: $blue;
+
+        .btn__number {
+            background-color: $blue;
+            color: $white;
+        }
+    }
+
+    &__border {
+        border: 0.1rem solid $blue;
+    }
+
+    &__icon-chevron {
+        margin-left: 0.6rem;
+    }
+
+    &__icon-plus {
+        margin-right: 0.35rem;
+    }
+
+    &__number {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.4rem;
+        height: 1.4rem;
+        margin-left: 0.3rem;
+        border-radius: 50%;
+        font-size: 0.9rem;
+        font-weight: $fw-2;
+        padding: 0.4rem;
+    }
+}
+
+@keyframes loader {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}

@@ -1,0 +1,13 @@
+.small {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 15.3rem;
+    width: 100%;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 3rem;
+    border: 0.1rem dashed $blue;
+    border-radius: 1.6rem;
+    padding: 2rem 1.6rem;
+    gap: 1.7rem;
+}

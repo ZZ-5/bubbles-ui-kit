@@ -1,0 +1,63 @@
+.tabbar {
+    display: flex;
+    justify-content: space-between;
+    width: 37.5rem;
+    height: 4.9rem;
+    padding: 1.3rem 5rem;
+    background-color: $tabbar;
+
+    &__home {
+        position: relative;
+        height: 8.3rem;
+
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 0.8rem;
+            left: 12rem;
+            width: 13.4rem;
+            height: 0.5rem;
+            background-color: $black;
+            border-radius: 10rem;
+        }
+    }
+
+    &__setting {
+        height: 2.25rem;
+    }
+
+    &__setting-icon {
+        max-width: 2.25rem;
+        width: 100%;
+    }
+
+    &__chat {
+        position: relative;
+        height: 2.25rem;
+    }
+
+    &__chat-number {
+        position: absolute;
+        top: -0.6rem;
+        right: -0.6rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 1.8rem;
+        font-size: $fs-2;
+        background-color: $red;
+        border-radius: 50%;
+        padding: 0.2rem 0.6rem;
+        color: $white;
+    }
+
+    &__contact {
+        height: 2.25rem;
+    }
+
+    &__contact-icon {
+        max-width: 2.25rem;
+        width: 100%;
+    }
+}

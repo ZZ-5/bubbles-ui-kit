@@ -1,0 +1,12 @@
+.menu {
+    max-width: 170rem;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.1rem solid $black;
+    background-color: $background;
+    padding: 12rem 10.3rem;
+    gap: 2rem;
+    margin: auto;
+    margin-bottom: 5rem;
+}

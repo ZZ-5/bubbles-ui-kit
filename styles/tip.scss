@@ -1,0 +1,58 @@
+.tip {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 3rem;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 137.8rem;
+        width: 100%;
+        height: 56.7rem;
+        border: 1px solid $black;
+        padding: 8.2rem 17.3rem;
+        gap: 2rem;
+    }
+
+    &__field {
+        display: flex;
+        flex-wrap: wrap;
+        width: 34.3rem;
+        height: 17rem;
+        gap: 1.8rem;
+    }
+
+    &__field-small {
+        width: 29rem;
+        row-gap: 0;
+
+        .tooltip__img {
+            width: 3.8rem;
+        }
+    }
+
+    &__field-dark {
+        .tooltip {
+            background-color: $dark;
+
+            &__text-title {
+                color: $white;
+            }
+
+            &__text-subtitle {
+                color: $white_0_5;
+            }
+
+            &__img {
+                background-color: $gray-dark;
+            }
+
+            &::before {
+                border-bottom: 1rem solid $dark;
+            }
+        }
+
+
+    }
+}

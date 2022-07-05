@@ -1,0 +1,11 @@
+.tab {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    border: 0.1rem solid $black;
+    padding: 6.8rem 18rem;
+    row-gap: 2rem;
+    column-gap: 3.8rem;
+    margin-bottom: 3rem;
+}

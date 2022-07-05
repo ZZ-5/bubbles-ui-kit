@@ -1,0 +1,79 @@
+.radio {
+    display: flex;
+    align-items: center;
+    width: 34.3rem;
+    height: 3.2rem;
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        row-gap: 5rem;
+        column-gap: 7rem;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+        width: 34.3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__default {
+        display: flex;
+        align-items: center;
+        width: 10.6rem;
+        height: 10.6rem;
+        border: 0.1rem dashed $blue;
+        border-radius: 1.6rem;
+        gap: 2rem;
+        padding: 2rem;
+        flex-wrap: wrap;
+    }
+
+    &__default-item {
+        width: 2.2rem;
+        height: 2.2rem;
+
+        .radio__btn {
+            width: 2.2rem;
+            height: 2.2rem;
+            margin: 0;
+        }
+    }
+
+    &__img {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        max-width: 3.2rem;
+        border-radius: 0.4rem;
+        margin-right: 0.4rem;
+        background-color: $field;
+        height: 3.2rem;
+    }
+
+    &__label {
+        display: flex;
+        width: 100%;
+        font-size: $fs-8;
+    }
+
+
+    &__label-text {
+        max-width: 26rem;
+        height: 2.6rem;
+        width: 100%;
+        display: flex;
+    }
+
+    &__btn {
+        width: 2.2rem;
+        height: 2.2rem;
+        margin: 0;
+        margin-right: 0.8rem;
+    }
+}

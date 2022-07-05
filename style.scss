@@ -1,0 +1,56 @@
+@import "./styles/fonts.scss";
+@import "./styles/varibles.scss";
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $ff;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+.page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.title {
+    color: $black;
+    font-size: $fs-15;
+    font-weight: $fw-4;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+
+@import "./styles/forms.scss";
+@import "./styles/input.scss";
+@import "./styles/radio.scss";
+@import "./styles/checkbox.scss";
+@import "./styles/button.scss";
+@import "./styles/btn.scss";
+@import "./styles/pick.scss";
+@import "./styles/picker.scss";
+@import "./styles/small.scss";
+@import "./styles/switch.scss";
+@import "./styles/tab.scss";
+@import "./styles/tabbar.scss";
+@import "./styles/tip.scss";
+@import "./styles/tooltip.scss";
+@import "./styles/bar.scss";
+@import "./styles/snackbar.scss";
+@import "./styles/menu.scss";
+@import "./styles/navigation.scss";

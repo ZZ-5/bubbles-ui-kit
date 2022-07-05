@@ -1,0 +1,31 @@
+.button {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3rem;
+    gap: 2rem;
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        width: 137.8rem;
+        border: 1px solid $black;
+        padding: 8rem 6.7rem;
+        column-gap: 4rem;
+        row-gap: 3rem;
+
+        &-mini {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            width: 137.8rem;
+            height: 40.5rem;
+            border: 1px solid $black;
+            padding: 8.2rem 40rem;
+            column-gap: 4rem;
+        }
+    }
+}
